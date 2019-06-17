@@ -1,0 +1,49 @@
+{
+  "name": "coq-elpi-lang",
+  "displayName": "Coq Elpi lang",
+  "description": "Syntax highlighting for Coq and Elpi",
+  "version": "0.0.1",
+  "publisher": "gares",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "coq",
+    "elpi"
+  ],
+  "extensionDependencies": [
+    "gares.elpi",
+    "gares.coq-lang"
+  ],
+  "readme": "https://github.com/LPCIC/coq-elpi-lang/README.md",
+  "bugs": "https://github.com/LPCIC/coq-elpi-lang/issues",
+  "homepage": "https://github.com/LPCIC/coq-elpi-lang/README.md",
+  "contributes": {
+    "languages": [
+      {
+        "id": "coq-elpi",
+        "aliases": [],
+        "extensions": [],
+        "configuration": "./coq-elpi.configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "coq-elpi",
+        "scopeName": "coq-elpi-HOAS.injection",
+        "path": "./syntaxes/coq-elpi.tmLanguage.json",
+        "injectTo": [
+          "source.elpi"
+        ]
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LPCIC/coq-elpi-lang.git"
+  }
+}
