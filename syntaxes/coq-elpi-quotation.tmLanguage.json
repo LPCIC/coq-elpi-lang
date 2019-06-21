@@ -1,0 +1,16 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Coq-elpi-quotation",
+	"patterns": [
+		{
+			"include": "#quotation"
+		}
+	],
+	"repository": {
+		"quotation": {
+			"patterns": [ { "include": "source.coq"}]
+		}
+	},
+	"scopeName": "coq-elpi-quotation.injection",
+	"injectionSelector": "L:source.elpi.quotation"
+}

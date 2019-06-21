@@ -39,6 +39,17 @@
         "injectTo": [
           "source.elpi"
         ]
+      },
+      {
+        "language": "coq-elpi-quotation",
+        "scopeName": "coq-elpi-quotation.injection",
+        "path": "./syntaxes/coq-elpi-quotation.tmLanguage.json",
+        "injectTo": [
+          "source.elpi"
+        ],
+        "embeddedLanguages": {
+           "source.elpi.quotation": "elpi"
+        }
       }
     ]
   },
