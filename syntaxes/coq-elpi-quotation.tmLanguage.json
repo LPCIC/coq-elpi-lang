@@ -1,16 +1,45 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Coq-elpi-quotation",
+	"name": "coq-elpi-quotation",
 	"patterns": [
 		{
-			"include": "#quotation"
+			"include": "#default-quotation"
 		}
 	],
 	"repository": {
-		"quotation": {
-			"patterns": [ { "include": "source.coq"}]
+		"default-quotation": {
+			"begin": "\\{\\{",
+			"end": "\\}\\}",
+			"name": "source.coq",
+			"patterns": [
+				{
+					"include": "source.coq"
+				},
+				{
+					"match": "lib:@?[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)*",
+					"name": "string.other"
+				},
+				{
+					"begin": "\\blp:([A-Z_][a-zA-Z0-9_]*)\\b",
+					"end":"",
+					"beginCaptures": {
+						"1": {
+							"name": "variable.language.elpi"
+						}
+					}
+				},
+				{
+					"begin": "\\blp:\\(([A-Z_][a-zA-Z0-9_]*)[ a-x0-9]+\\)",
+					"end":"",
+					"beginCaptures": {
+						"1": {
+							"name": "variable.language.elpi"
+						}
+					}
+				}
+			]
 		}
 	},
 	"scopeName": "coq-elpi-quotation.injection",
-	"injectionSelector": "L:source.elpi.quotation"
+	"injectionSelector": "L:quotation.elpi"
 }

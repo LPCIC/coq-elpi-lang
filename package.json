@@ -34,21 +34,37 @@
     "grammars": [
       {
         "language": "coq-elpi",
+        "scopeName": "coq-lib-quotation.injection",
+        "path": "./syntaxes/coq-lib-quotation.tmLanguage.json",
+        "injectTo": [
+          "source.coq"
+        ]
+      },
+      {
+        "language": "coq-elpi",
+        "scopeName": "coq-elpi-vernacular.injection",
+        "path": "./syntaxes/coq-elpi-vernacular.tmLanguage.json",
+        "injectTo": [
+          "source.coq"
+        ]
+      },
+      {
+        "language": "coq-elpi",
         "scopeName": "coq-elpi-HOAS.injection",
-        "path": "./syntaxes/coq-elpi.tmLanguage.json",
+        "path": "./syntaxes/coq-elpi-HOAS.tmLanguage.json",
         "injectTo": [
           "source.elpi"
         ]
       },
       {
-        "language": "coq-elpi-quotation",
+        "language": "coq-elpi",
         "scopeName": "coq-elpi-quotation.injection",
         "path": "./syntaxes/coq-elpi-quotation.tmLanguage.json",
         "injectTo": [
           "source.elpi"
         ],
         "embeddedLanguages": {
-           "source.elpi.quotation": "elpi"
+           "source.coq": "coq"
         }
       }
     ]

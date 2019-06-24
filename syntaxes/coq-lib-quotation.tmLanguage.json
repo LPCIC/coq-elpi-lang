@@ -1,0 +1,16 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "coq-lib-quotation",
+	"patterns": [
+		{ "include": "#lib-quotation"}
+	],
+	"repository":{
+		"lib-quotation":
+		{
+			"match": "lib:@?[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)*",
+			"name":"constant.numeric"
+		}
+	},
+	"scopeName": "coq-lib-quotation.injection",
+	"injectionSelector": "L:source.coq"
+}

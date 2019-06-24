@@ -4,18 +4,21 @@
 	"patterns": [
 		{
 			"include": "#hoas"
+		},
+		{
+			"include": "#gref"
 		}
 	],
 	"repository": {
-		"hoas":{ 
-					"name": "constant.numeric",
-					"match": "(?<=[ ,])(sort|global|lam|prod|let|app|match|fix|hole|cofix|proj)(?=[ ,\\.])"	
+		"hoas": {
+			"name": "keyword.control.coq",
+			"match": "(?<![-\\.])(sort|global|lam|prod|let|app|match|fix|hole|cofix|proj)"
 		},
-		"gref":{ 
+		"gref": {
 			"name": "string.other",
-			"match": "(?<=[ ,])(indt|indc|const)(?=[ ,\\.])"	
-}
-},
+			"match": "(?<![-\\.])(indt|indc|const)"
+		}
+	},
 	"scopeName": "coq-elpi-HOAS.injection",
 	"injectionSelector": "L:entity.name.elpi"
 }
