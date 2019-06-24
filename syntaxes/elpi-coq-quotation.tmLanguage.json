@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "coq-elpi-quotation",
+	"name": "elpi-coq-quotation",
 	"patterns": [
 		{
 			"include": "#lp-quotation"
@@ -76,6 +76,6 @@
 			}
 		}
 	},
-	"scopeName": "coq-elpi-quotation.injection",
-	"injectionSelector": "L:source.elpi"
+	"scopeName": "elpi-coq-quotation.injection",
+	"injectionSelector": "L:source.coq"
 }

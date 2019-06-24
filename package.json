@@ -34,14 +34,6 @@
     "grammars": [
       {
         "language": "coq-elpi",
-        "scopeName": "coq-lib-quotation.injection",
-        "path": "./syntaxes/coq-lib-quotation.tmLanguage.json",
-        "injectTo": [
-          "source.coq"
-        ]
-      },
-      {
-        "language": "coq-elpi",
         "scopeName": "coq-elpi-vernacular.injection",
         "path": "./syntaxes/coq-elpi-vernacular.tmLanguage.json",
         "injectTo": [
@@ -50,11 +42,15 @@
       },
       {
         "language": "coq-elpi",
-        "scopeName": "coq-elpi-HOAS.injection",
-        "path": "./syntaxes/coq-elpi-HOAS.tmLanguage.json",
+        "scopeName": "elpi-coq-quotation.injection",
+        "path": "./syntaxes/elpi-coq-quotation.tmLanguage.json",
         "injectTo": [
-          "source.elpi"
-        ]
+          "source.coq"
+        ],
+        "embeddedLanguages": {
+          "source.coq": "coq",
+          "source.elpi": "elpi"
+        }
       },
       {
         "language": "coq-elpi",
@@ -64,7 +60,8 @@
           "source.elpi"
         ],
         "embeddedLanguages": {
-           "source.coq": "coq"
+          "source.coq": "coq",
+          "source.elpi": "elpi"
         }
       }
     ]
