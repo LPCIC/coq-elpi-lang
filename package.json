@@ -17,7 +17,7 @@
   ],
   "extensionDependencies": [
     "gares.elpi",
-    "gares.coq-lang"
+    "siegebell.vscoq"
   ],
   "readme": "https://github.com/LPCIC/coq-elpi-lang/README.md",
   "bugs": "https://github.com/LPCIC/coq-elpi-lang/issues",
@@ -42,22 +42,11 @@
       },
       {
         "language": "coq-elpi",
-        "scopeName": "elpi-coq-quotation.injection",
-        "path": "./syntaxes/elpi-coq-quotation.tmLanguage.json",
-        "injectTo": [
-          "source.coq"
-        ],
-        "embeddedLanguages": {
-          "source.coq": "coq",
-          "source.elpi": "elpi"
-        }
-      },
-      {
-        "language": "coq-elpi",
         "scopeName": "coq-elpi-quotation.injection",
         "path": "./syntaxes/coq-elpi-quotation.tmLanguage.json",
         "injectTo": [
-          "source.elpi"
+          "source.elpi",
+          "source.coq"
         ],
         "embeddedLanguages": {
           "source.coq": "coq",

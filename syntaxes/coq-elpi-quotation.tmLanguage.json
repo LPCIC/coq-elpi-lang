@@ -27,11 +27,11 @@
 	"repository": {
 		"hoas": {
 			"name": "keyword.control.coq",
-			"match": "(?<![-\\.])(sort|global|lam|prod|let|app|match|fix|hole|cofix|proj)"
+			"match": "(?<![-\\.])\\b(sort|global|lam|prod|let|app|match|fix|hole|cofix|proj)\\b"
 		},
 		"gref": {
 			"name": "string.other",
-			"match": "(?<![-\\.])(indt|indc|const)"
+			"match": "(?<![-\\.])\\b(indt|indc|const)\\b"
 		},
 		"lib-quotation": {
 			"match": "lib:@?[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)*",
@@ -77,5 +77,5 @@
 		}
 	},
 	"scopeName": "coq-elpi-quotation.injection",
-	"injectionSelector": "L:source.elpi"
+	"injectionSelector": "L:source.elpi -comment, L:source.coq -comment"
 }
