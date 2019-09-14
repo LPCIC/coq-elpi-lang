@@ -1,62 +1,67 @@
 {
-  "name": "coq-elpi-lang",
-  "displayName": "Coq Elpi lang",
-  "description": "Syntax highlighting for Coq and Elpi",
-  "version": "0.0.1",
-  "publisher": "gares",
-  "license": "MIT",
-  "engines": {
-    "vscode": "^1.33.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "keywords": [
-    "coq",
-    "elpi"
-  ],
-  "extensionDependencies": [
-    "gares.elpi",
-    "siegebell.vscoq"
-  ],
-  "readme": "https://github.com/LPCIC/coq-elpi-lang/README.md",
-  "bugs": "https://github.com/LPCIC/coq-elpi-lang/issues",
-  "homepage": "https://github.com/LPCIC/coq-elpi-lang/README.md",
-  "contributes": {
-    "languages": [
-      {
-        "id": "coq-elpi",
-        "aliases": [],
-        "extensions": [],
-        "configuration": "./coq-elpi.configuration.json"
-      }
-    ],
-    "grammars": [
-      {
-        "language": "coq-elpi",
-        "scopeName": "coq-elpi-vernacular.injection",
-        "path": "./syntaxes/coq-elpi-vernacular.tmLanguage.json",
-        "injectTo": [
-          "source.coq"
-        ]
-      },
-      {
-        "language": "coq-elpi",
-        "scopeName": "coq-elpi-quotation.injection",
-        "path": "./syntaxes/coq-elpi-quotation.tmLanguage.json",
-        "injectTo": [
-          "source.elpi",
-          "source.coq"
-        ],
-        "embeddedLanguages": {
-          "source.coq": "coq",
-          "source.elpi": "elpi"
-        }
-      }
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/LPCIC/coq-elpi-lang.git"
-  }
+	"name": "coq-elpi-lang",
+	"displayName": "Coq Elpi lang",
+	"description": "Syntax highlighting for Coq and Elpi",
+	"version": "0.0.1",
+	"publisher": "gares",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"keywords": [
+		"coq",
+		"elpi"
+	],
+	"extensionDependencies": [
+		"gares.elpi",
+		"siegebell.vscoq"
+	],
+	"readme": "https://github.com/LPCIC/coq-elpi-lang/README.md",
+	"bugs": "https://github.com/LPCIC/coq-elpi-lang/issues",
+	"homepage": "https://github.com/LPCIC/coq-elpi-lang/README.md",
+	"contributes": {
+		"languages": [
+			{
+				"id": "coq-elpi",
+				"aliases": [],
+				"extensions": [],
+				"configuration": "./coq-elpi.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "coq-elpi",
+				"scopeName": "coq-elpi-vernacular.injection",
+				"path": "./syntaxes/coq-elpi-vernacular.tmLanguage.json",
+				"injectTo": [
+					"source.coq"
+				]
+			},
+			{
+				"language": "coq-elpi",
+				"scopeName": "coq-elpi-quotation.injection",
+				"path": "./syntaxes/coq-elpi-quotation.tmLanguage.json",
+				"injectTo": [
+					"source.elpi",
+					"source.coq"
+				],
+				"embeddedLanguages": {
+					"source.coq": "coq",
+					"source.elpi": "elpi"
+				}
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LPCIC/coq-elpi-lang.git"
+	},
+	"__metadata": {
+		"id": "f110bf02-4c98-48f1-9c82-967ca47fdbd9",
+		"publisherDisplayName": "Enrico Tassi",
+		"publisherId": "a31c90d1-39d0-4553-b020-dd47cff7daf8"
+	}
 }
