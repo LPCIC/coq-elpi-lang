@@ -2,7 +2,7 @@
 	"name": "coq-elpi-lang",
 	"displayName": "Coq Elpi lang",
 	"description": "Syntax highlighting for Coq and Elpi",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "gares",
 	"license": "MIT",
 	"engines": {
