@@ -17,7 +17,7 @@
 	],
 	"extensionDependencies": [
 		"gares.elpi",
-		"siegebell.vscoq"
+		"maximedenes.vscoq"
 	],
 	"readme": "https://github.com/LPCIC/coq-elpi-lang/README.md",
 	"bugs": "https://github.com/LPCIC/coq-elpi-lang/issues",
