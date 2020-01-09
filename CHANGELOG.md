@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.4
+
+- Elpi Export <qualid>.
+
 ## 0.0.3
 
 - depend on maximedenes.vscoq rather than the old siegebell.vscoq

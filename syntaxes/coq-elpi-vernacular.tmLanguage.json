@@ -6,7 +6,7 @@
 	],
 	"repository":{
 		"vernacular": {
-			"match": "\\bElpi ((?!lp:)[a-z][a-zA-Z0-9_\\.]*|(Program|Command|Tactic|Db)|Accumulate( (?!lp:)[a-z][a-zA-Z0-9_\\.]*)?( (Files?|Db))?|Typecheck|Print|Debug|Trace( Off)?|Bound Steps|Query)\\b",
+			"match": "\\bElpi ((?!lp:)[a-z][a-zA-Z0-9_\\.]*|(Program|Command|Tactic|Db|Export)|Accumulate( (?!lp:)[a-z][a-zA-Z0-9_\\.]*)?( (Files?|Db))?|Typecheck|Print|Debug|Trace( Off)?|Bound Steps|Query)\\b",
 			"name": "keyword.source.coq"
 		},
 		"vernacular-ltac": {
