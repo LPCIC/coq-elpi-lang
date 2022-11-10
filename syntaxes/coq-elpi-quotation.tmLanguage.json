@@ -30,11 +30,11 @@
 	"repository": {
 		"hoas": {
 			"name": "keyword.control.coq",
-			"match": "(?<![-\\.])\\b(sort|global|fun|prod|let|app|match|fix|cofix|proj)\\b"
+			"match": "(?<![-\\.+])\\b(sort|global|fun|prod|let|app|match|fix|cofix|proj)\\b"
 		},
 		"gref": {
 			"name": "string.other",
-			"match": "(?<![-\\.])\\b(indt|indc|const)\\b"
+			"match": "(?<![-\\.+])\\b(indt|indc|const)\\b"
 		},
 		"lib-quotation": {
 			"match": "lib:@?[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)*",
