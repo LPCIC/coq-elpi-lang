@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.5
+
+- Fix minor glitches
+
 ## 0.0.4
 
 - Elpi Export <qualid>.
