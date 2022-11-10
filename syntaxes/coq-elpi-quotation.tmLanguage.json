@@ -74,5 +74,5 @@
 		}
 	},
 	"scopeName": "coq-elpi-quotation.injection",
-	"injectionSelector": "L:source.elpi -comment, L:source.coq -comment"
+	"injectionSelector": "L:source.elpi -comment -string, L:source.coq -comment -string"
 }
