@@ -16,7 +16,7 @@
 		"elpi"
 	],
 	"extensionDependencies": [
-		"gares.elpi",
+		"gares.elpi-lang",
 		"maximedenes.vscoq"
 	],
 	"readme": "https://github.com/LPCIC/coq-elpi-lang/README.md",
