@@ -2,7 +2,7 @@
 	"name": "coq-elpi-lang",
 	"displayName": "Coq Elpi lang",
 	"description": "Syntax highlighting for Coq and Elpi",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"publisher": "gares",
 	"license": "MIT",
 	"engines": {
@@ -17,7 +17,6 @@
 	],
 	"extensionDependencies": [
 		"gares.elpi-lang",
-		"maximedenes.vscoq"
 	],
 	"readme": "https://github.com/LPCIC/coq-elpi-lang/README.md",
 	"bugs": "https://github.com/LPCIC/coq-elpi-lang/issues",
