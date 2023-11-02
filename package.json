@@ -16,7 +16,7 @@
 		"elpi"
 	],
 	"extensionDependencies": [
-		"gares.elpi-lang",
+		"gares.elpi-lang"
 	],
 	"readme": "https://github.com/LPCIC/coq-elpi-lang/README.md",
 	"bugs": "https://github.com/LPCIC/coq-elpi-lang/issues",
