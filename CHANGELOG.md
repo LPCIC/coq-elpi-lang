@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.0.6
+
+- Drop dependency on maximedenes.vscoq since the extension works with both
+  maximedenes.vscoq and coq-community.vscoq1
+  
+
 ## 0.0.5
 
 - Fix minor glitches
