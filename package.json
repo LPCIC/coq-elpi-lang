@@ -58,6 +58,9 @@
 		"type": "git",
 		"url": "https://github.com/LPCIC/coq-elpi-lang.git"
 	},
+	"scripts": {
+		"deploy": "vsce publish"
+	},
 	"__metadata": {
 		"id": "f110bf02-4c98-48f1-9c82-967ca47fdbd9",
 		"publisherDisplayName": "Enrico Tassi",
