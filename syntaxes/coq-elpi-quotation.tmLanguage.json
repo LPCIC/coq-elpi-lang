@@ -30,7 +30,7 @@
 	"repository": {
 		"hoas": {
 			"name": "keyword.control.coq",
-			"match": "(?<![-\\.+])\\b(sort|global|fun|prod|let|app|match|fix|cofix|proj)\\b"
+			"match": "(?<![-\\.+])\\b(sort|global|fun|prod|let|app|match|fix|cofix|mfix|mcofix|proj)\\b"
 		},
 		"gref": {
 			"name": "string.other",
