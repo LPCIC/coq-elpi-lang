@@ -1,8 +1,8 @@
 {
 	"name": "coq-elpi-lang",
 	"displayName": "Coq Elpi lang",
-	"description": "Syntax highlighting for Coq and Elpi",
-	"version": "0.0.8",
+	"description": "Syntax highlighting for Coq/Rocq and Elpi",
+	"version": "0.0.9",
 	"publisher": "gares",
 	"license": "MIT",
 	"engines": {
@@ -13,6 +13,7 @@
 	],
 	"keywords": [
 		"coq",
+		"rocq",
 		"elpi"
 	],
 	"extensionDependencies": [
@@ -28,7 +29,14 @@
 				"aliases": [],
 				"extensions": [],
 				"configuration": "./coq-elpi.configuration.json"
+			},
+			{
+				"id": "rocq-elpi",
+				"aliases": [],
+				"extensions": [],
+				"configuration": "./coq-elpi.configuration.json"
 			}
+
 		],
 		"grammars": [
 			{
@@ -37,6 +45,14 @@
 				"path": "./syntaxes/coq-elpi-vernacular.tmLanguage.json",
 				"injectTo": [
 					"source.coq"
+				]
+			},
+			{
+				"language": "rocq-elpi",
+				"scopeName": "rocq-elpi-vernacular.injection",
+				"path": "./syntaxes/rocq-elpi-vernacular.tmLanguage.json",
+				"injectTo": [
+					"source.rocq"
 				]
 			},
 			{
@@ -51,7 +67,21 @@
 					"source.coq": "coq",
 					"source.elpi": "elpi"
 				}
+			},
+			{
+				"language": "rocq-elpi",
+				"scopeName": "rocq-elpi-quotation.injection",
+				"path": "./syntaxes/rocq-elpi-quotation.tmLanguage.json",
+				"injectTo": [
+					"source.elpi",
+					"source.rocq"
+				],
+				"embeddedLanguages": {
+					"source.rocq": "rocq",
+					"source.elpi": "elpi"
+				}
 			}
+
 		]
 	},
 	"repository": {

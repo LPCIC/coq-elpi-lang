@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.0.9
+
+- support Rocq
+
 ## 0.0.7
 
 - Syntax for Elpi 2.0

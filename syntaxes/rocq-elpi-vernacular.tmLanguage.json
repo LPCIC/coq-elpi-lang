@@ -1,0 +1,19 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "rocq-elpi-vernacular",
+	"patterns": [
+		{ "include": "#vernacular" }, {"include": "#vernacular-ltac" }
+	],
+	"repository":{
+		"vernacular": {
+			"match": "\\bElpi ((?!lp:)[a-z][a-zA-Z0-9_\\.]*|(Program|Command|Tactic|Db|Db Header|File|Export)|Accumulate( (?!lp:)[a-z][a-zA-Z0-9_\\.]*)?( (Files?|Db) +(Header|Signature)?)?|Typecheck|Print|Debug|Trace( Off)?|Bound Steps|Query)\\b",
+			"name": "keyword.source.rocq"
+		},
+		"vernacular-ltac": {
+			"match" : "elpi +[a-z][a-zA-Z0-9_\\.]*",
+			"name":"support.function.builtin.ltac"
+		}
+	},
+	"scopeName": "rocq-elpi-vernacular.injection",
+	"injectionSelector": "L:source.rocq"
+}

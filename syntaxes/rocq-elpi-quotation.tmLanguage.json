@@ -1,0 +1,78 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "rocq-elpi-quotation",
+	"patterns": [
+		{
+			"include": "#lp-quotation"
+		},
+		{
+			"include": "#lp-uvar-quotation"
+		},
+		{
+			"include": "#lp-var-quotation"
+		},
+		{
+			"include": "#lp-app-var-quotation"
+		},
+		{
+			"include": "#rocq-quotation"
+		},
+		{
+			"include": "#lib-quotation"
+		},
+		{
+			"include": "#hoas"
+		},
+		{
+			"include": "#gref"
+		}
+	],
+	"repository": {
+		"hoas": {
+			"name": "keyword.control.rocq",
+			"match": "(?<![-\\.+])\\b(sort|global|fun|prod|let|app|match|fix|cofix|mfix|mcofix|proj)\\b"
+		},
+		"gref": {
+			"name": "string.other",
+			"match": "(?<![-\\.+])\\b(indt|indc|const)\\b"
+		},
+		"lib-quotation": {
+			"match": "lib:@?[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)*",
+			"name": "string.other"
+		},
+		"lp-quotation": {
+			"begin": "\\blp:\\{\\{",
+			"end": "\\}\\}",
+			"name": "source.elpi",
+			"patterns": [
+				{
+					"include": "source.elpi"
+				}
+			]
+		},
+		"rocq-quotation": {
+			"begin": "(?<!lp:)\\{\\{",
+			"end": "\\}\\}",
+			"name": "source.rocq",
+			"patterns": [
+				{
+					"include": "source.rocq"
+				}
+			]
+		},
+		"lp-uvar-quotation": {
+			"match": "(?<=lp:)[A-Z_][a-zA-Z0-9_]*",
+			"name": "variable.language.elpi"
+		},
+		"lp-var-quotation": {
+			"match": "(?<=lp:)[a-z][a-zA-Z0-9_]*",
+			"name": "variable.language.elpi"
+		},
+		"lp-app-var-quotation": {
+			"match": "(?<=lp:\\()[A-Z_][a-zA-Z0-9_]*(?=[ a-x0-9]+\\))",
+			"name": "variable.language.elpi"
+		}
+	},
+	"scopeName": "rocq-elpi-quotation.injection",
+	"injectionSelector": "L:source.elpi -comment -string, L:source.rocq -comment -string"
+}
